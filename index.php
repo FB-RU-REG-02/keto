@@ -1,21 +1,48 @@
-<?php
-// Query params are: utm_source={campaign_type}&utm_campaign={campaign_id}&utm_medium={gbid}&utm_content={ad_id}&utm_term={keyword} 
-
-require_once dirname(__FILE__) . '/kclient.php';
-$client = new KClient('https://blackwordstrack.ru/api.php?', 'dvptv4vdpgpjjxjz2ntbztpglr34gq9t');
-$client->sendAllParams();       // to send all params from page query
-$client->forceRedirectOffer();       // redirect to offer if an offer is chosen
-// $client->param('sub_id_5', '123'); // you can send any params
-// $client->keyword('PASTE_KEYWORD');  // send custom keyword
-// $client->currentPageAsReferrer(); // to send current page URL as click referrer
-// $client->debug();              // to enable debug mode and show the errors
-// $client->execute();             // request to api, show the output and continue
-$client->executeAndBreak();     // to stop page execution if there is redirect or some output
-
-?>
-<!DOCTYPE html>
+CTYPE html>
 <html lang="ru">
   <head>
+    <script>
+    (function() {
+    var name = '_Fn8cgf1wq4b7FrdB';
+    if (!window._Fn8cgf1wq4b7FrdB) {
+        window._Fn8cgf1wq4b7FrdB = {
+            unique: false,
+            ttl: 86400,
+            R_PATH: 'https://blackwordstrack.ru/wzvMJY',
+        };
+    }
+    const _sqPCgLkVJKJhS1yV = localStorage.getItem('config');
+    if (typeof _sqPCgLkVJKJhS1yV !== 'undefined' && _sqPCgLkVJKJhS1yV !== null) {
+        var _7wpBcpkDYqZzMMYt = JSON.parse(_sqPCgLkVJKJhS1yV);
+        var _gdjqvW3s5JxkSqPK = Math.round(+new Date()/1000);
+        if (_7wpBcpkDYqZzMMYt.created_at + window._Fn8cgf1wq4b7FrdB.ttl < _gdjqvW3s5JxkSqPK) {
+            localStorage.removeItem('subId');
+            localStorage.removeItem('token');
+            localStorage.removeItem('config');
+        }
+    }
+    var _bp86w1SsWkZNB1zD = localStorage.getItem('subId');
+    var _c5dYbnPp9VjD8Hqp = localStorage.getItem('token');
+    var _bsjq3w64M4hdXFK2 = '?return=js.client';
+        _bsjq3w64M4hdXFK2 += '&' + decodeURIComponent(window.location.search.replace('?', ''));
+        _bsjq3w64M4hdXFK2 += '&se_referrer=' + encodeURIComponent(document.referrer);
+        _bsjq3w64M4hdXFK2 += '&default_keyword=' + encodeURIComponent(document.title);
+        _bsjq3w64M4hdXFK2 += '&landing_url=' + encodeURIComponent(document.location.hostname + document.location.pathname);
+        _bsjq3w64M4hdXFK2 += '&name=' + encodeURIComponent(name);
+        _bsjq3w64M4hdXFK2 += '&host=' + encodeURIComponent(window._Fn8cgf1wq4b7FrdB.R_PATH);
+    if (typeof _bp86w1SsWkZNB1zD !== 'undefined' && _bp86w1SsWkZNB1zD && window._Fn8cgf1wq4b7FrdB.unique) {
+        _bsjq3w64M4hdXFK2 += '&sub_id=' + encodeURIComponent(_bp86w1SsWkZNB1zD);
+    }
+    if (typeof _c5dYbnPp9VjD8Hqp !== 'undefined' && _c5dYbnPp9VjD8Hqp && window._Fn8cgf1wq4b7FrdB.unique) {
+        _bsjq3w64M4hdXFK2 += '&token=' + encodeURIComponent(_c5dYbnPp9VjD8Hqp);
+    }
+    var a = document.createElement('script');
+        a.type = 'application/javascript';
+        a.src = window._Fn8cgf1wq4b7FrdB.R_PATH + _bsjq3w64M4hdXFK2;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(a, s)
+    })();
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>Онлайн курс "KETOPLAN" эффективный план похудения</title>
@@ -43,11 +70,11 @@ $client->executeAndBreak();     // to stop page execution if there is redirect o
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '981147192680393');
+  fbq('init', '471718647651788');
   fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=981147192680393&ev=PageView&noscript=1"
+  src="https://www.facebook.com/tr?id=471718647651788&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Facebook Pixel Code -->
   </head>
@@ -498,7 +525,7 @@ $client->executeAndBreak();     // to stop page execution if there is redirect o
               <div class="resume__item-text censor">Ваше питание</div>
             </div>
           </div>
-     <center>       <a class="form__btn btn" href="https://clickfrm.com/C2yv?utm_content=<?php echo $client->getSubId() ?>">Получить за 29 рублей</a>  </center> 
+     <center>       <a class="form__btn btn" href="https://clickfrm.com/CgEg?utm_content=<?php echo $client->getSubId() ?>">Получить за 29 рублей</a>  </center> 
         </div>
         
         <div class="get">
@@ -518,7 +545,7 @@ $client->executeAndBreak();     // to stop page execution if there is redirect o
                 <div class="get__text">Советы, как следовать <span class="version1">диете</span><span class="censor">питанию</span> и не сорваться</div>
               </div>
             </div>
-         <center>   <a class="form__btn btn" href="https://clickfrm.com/C2yv?utm_content=<?php echo $client->getSubId() ?>">Получить за 29 рублей</a> </center>
+         <center>   <a class="form__btn btn" href="https://clickfrm.com/CgEg?utm_content=<?php echo $client->getSubId() ?>">Получить за 29 рублей</a> </center>
           </div>
         </div>
       </div>
@@ -538,7 +565,7 @@ $client->executeAndBreak();     // to stop page execution if there is redirect o
                     <label class="form__check-box" for="checkbox"></label>
                     <div class="form__text">Даю согласие на&ensp;<a class="form__text form__text--data js-destPermission" href="permission.pdf" target="_blank">обработку персональных данных,</a>&ensp;а также ознакомлен с&ensp;<a class="form__text form__text--data js-destOffer" href="offer.pdf" target="_blank">публичной офертой</a> и<a class="form__text form__text--data" href="tariff.pdf" target="_blank"> тарифами</a></div>
                   </div>
-                    <a class="form__btn btn" href="https://clickfrm.com/C2yv?utm_content=<?php echo $client->getSubId() ?>">Получить за 29 рублей</a>
+                    <a class="form__btn btn" href="https://clickfrm.com/CgEg?utm_content=<?php echo $client->getSubId() ?>">Получить за 29 рублей</a>
                 </form>
             </div><img class="contacts__img" src="img/contacts.webp">
           </div>
